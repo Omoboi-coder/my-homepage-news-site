@@ -29,14 +29,14 @@ const Hero = () => {
           The Bright Future of Web 3.0?
         </h1>
         <div className="space-y-4 text-gray-500 text-start md:w-1/2">
-        <p className="">
+        <p className="font-normal">
           We dive into the next evolution of the web that claims 
           to put the power of the platforms back into the hands of the people. 
           But is it really fulfilling its promise?
         </p>
         <button 
         type="button"
-        className="bg-red-500 text-black py-2 px-8 hover:bg-red-600 cursor-pointer"
+        className="bg-red-500 text-gray-900 text-md py-2 px-8 mt-1 font-semibold hover:bg-red-600 cursor-pointer"
         >
         READ MORE
       </button>
@@ -52,35 +52,38 @@ const Hero = () => {
         </h3>
 
         <div className=''>
-        <h4 className="font-bold md:text-xl text-white hover:text-amber-400 cursor-pointer">
+        <h4 className="font-bold text-xl md:text-xl text-white hover:text-amber-400 cursor-pointer">
           Hydrogen VS Electric Cars
-          <p className="text-gray-400 pt-2 md:text-sm">
+          </h4>
+          <p className="text-gray-400 pt-2 text-lg md:text-sm">
             Will hydrogen-fueled cars ever catch up to EVs?
           </p>
-          </h4>
+          
           <div className="py-4 border-b-1 border-gray-500"></div>
           </div>
           
 
           <div className=''>
-          <h4 className="font-bold md:text-xl text-white pt-3 hover:text-amber-400 cursor-pointer">
+          <h4 className="font-bold text-xl md:text-xl text-white pt-3 hover:text-amber-400 cursor-pointer">
            The Downsides of AI Artistry
-          <p className="text-gray-400 pt-2 md:text-sm">
+           </h4>
+          <p className="text-gray-400 pt-2 text-lg md:text-sm">
              What are the possible adverse effects of on-demand AI image generation?
           </p>
-          </h4>
+          
           <div 
           className="py-4 border-b-1 border-gray-500">
           </div>
           </div>
 
           <div className="pt-4">
-          <h4 className="font-bold md:text-xl mb-5.5 text-white  hover:text-amber-400 cursor-pointer">
+          <h4 className="font-bold text-xl md:text-xl text-white  hover:text-amber-400 cursor-pointer">
           Is VC Funding Drying Up?
-          <p className="text-gray-400 pt-2 md:text-sm">
+           </h4>
+          <p className="text-gray-400 pt-2 text-lg mb-5 md:text-sm">
              Private funding by VC firms is down 50% YOY. We take a look at what that means.
           </p>
-          </h4>
+         
           </div>
           </div>
           </div>

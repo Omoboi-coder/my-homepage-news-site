@@ -9,11 +9,24 @@ const Navbar = () => {
   const toggleMenu = () => setMenuOpen(!menuOpen)
 
   return (
-    <nav className="relative container mx-auto mt-4 px-6 md:mt-12 md:px-32">
+    <nav className="relative container pt-4 mx-auto mt px-6 md:mt-12 md:px-32">
       <div className="flex items-center justify-between">
         {/* Logo */}
         <div className="pt-4">
-          <Image src="/images/logo.svg" alt="Logo" width={50} height={50} />
+          <Image 
+          src="/images/logo.svg" 
+          alt="Logo" 
+          width={50} 
+          height={50} 
+          className='block dark:hidden'
+          />
+          <Image
+          src="/images/logo white.svg"
+          alt='White Logo'
+          width={50}
+          height={50}
+          className='hidden dark:block'
+          />
         </div>
 
         {/* Desktop menu */}
@@ -25,7 +38,7 @@ const Navbar = () => {
           <Link href="#" className="hover:text-red-400">Categories</Link>
         </div>
 
-        {/* Mobile menu icon (hamburger) */}
+        {/* hamburger icon */}
         {!menuOpen && (
           <button onClick={toggleMenu} className="block md:hidden mt-4 focus:outline-none">
             <Image
@@ -33,6 +46,14 @@ const Navbar = () => {
               alt="Open menu"
               width={40}
               height={40}
+              className='block dark:hidden'
+            />
+            <Image
+            src="/images/icon-menu-white.svg"
+            alt='Open menu light'
+            width={40}
+            height={40}
+            className='hidden dark:block'
             />
           </button>
         )}
